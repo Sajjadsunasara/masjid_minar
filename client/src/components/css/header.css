@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  list-style: none;
+  appearance: none;
+}
+
+
+:root{
+  --clr-primary:#7380ec;
+  --clr-danger:#ff7782;
+  --clr-success:#41f1b6;
+  --clr-white:#fff;
+  --clr-info-dark:#7d8da1;
+  --clr-info-light:#dce1eb;
+  --clr-dark:#363949;
+  --clr-warning:#ff4edc;
+  --clr-light:rgba(132,139,200,0.18);
+  --clr-primary-variant:#111e88;
+  --clr-dark-variant:#677483;
+  --clr-color-background:#f6f6f9;
+  --clr-blue : #2A2185;
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color:var(--clr-blue);
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .header1 .logo1 img {
+    width: 51.25%;
+    border-radius: 8px;
+
+  }
+  
+  .header1 .user-info1 {
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    color:rgb(58, 58, 58);
+    justify-content: space-around;
+  }
+  
+  .header1 .user-info1 i {
+    margin-left: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    
+  }
+  
+  .profile{
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #logout{
+    font-size: 14px;
+  }
+
+  .search-container{
+    width: 50%;
+  }
+  
+  .search-bar {
+    width: 80%;
+    padding: 6.6px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: var(--clr-white);  
+    border-style: none;
+    margin-left: 45px;
+  }
+  .search-bar:focus{
+    outline: none;
+  }
+  .search{
+    background-color: rgba(9, 182, 237, 1);
+    padding: 11.1px;
+    color: var(--clr-info-light);
+    font-size: 15.7px !important;
+    cursor: pointer;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.bell{
+    color: var(--clr-white);
+}
+
+.user-info img{
+    width: 27px;
+}
+
+.profile i, span{
+color: var(--clr-white);
+cursor: pointer;
+}
+
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 20%;
+}
+
+.navigation {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 215px;
+  height: calc(100vh - 56px); 
+  background: var(--blue);
+  border-left: 5px solid var(--blue);
+  overflow-y: auto; 
+}
+
+
+.main_section {
+  /* margin-left: 220px;  */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Styles for the table */
+.teble_section {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.teble_section th, .teble_section td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--clr-info-light);
+}
+
+.teble_section th {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.teble_section tr:nth-child(even) {
+  background-color: var(--clr-light);
+}
+
+
+
+.navigation ul{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+
+
+}
+    
+.navigation ul li .NavLink{
+    position: inherit;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.navigation ul li .NavLink .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 69px;
+    text-align: center;
+}
+
+.navigation ul li .NavLink .icon i{
+    font-size: 1.75rem;
+}
+
+.navigation ul li .NavLink .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+}
+
+.navigation ul li .NavLink.active {
+  background-color:#F9F9F9 !important;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.navigation ul li .NavLink.active span {
+  color: var(--blue);
+}
+
+.NavLink.active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px #F9F9F9;
+  pointer-events: none;
+}
+
+.NavLink.active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px #F9F9F9;
+  pointer-events: none;
+}
+
+

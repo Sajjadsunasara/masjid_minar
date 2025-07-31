@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  list-style: none;
+  appearance: none;
+}
+
+
+:root{
+  --createConnection:#7380ec;
+  --clr-danger:#ff7782;
+  --clr-success:#41f1b6;
+  --clr-white:#fff;
+  --clr-info-dark:#7d8da1;
+  --clr-info-light:#dce1eb;
+  --clr-dark:#363949;
+  --clr-warning:#ff4edc;
+  --clr-light:rgba(132,139,200,0.18);
+  --clr-primary-variant:#111e88;
+  --clr-dark-variant:#677483;
+  --clr-color-background:#f6f6f9;
+  --clr-blue : #2A2185;
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ::selection {
+    background-color: #ffcc00;  
+    color: black;  
+  } */
+  
+  
+  
+  .main_section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0% 6%;
+    gap: 15px;
+    margin-top: -9%;
+    width: 80vw;
+  }
+  
+  table, th ,td, tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2%;
+    background-color: pink;
+  }
+  .add_product{
+      display: flex;
+      justify-content: center;
+  }
+.all_Product{
+  color: var(--black1);
+}
+
+.add_p{
+  margin-right: -570px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--black1);
+}
+
+.main_section h1{
+  margin-top: 172px;
+  font-size: 40px;
+  position: relative;
+  font-weight: 700;
+}
+
+
+.add_product_form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  max-width: 905px;
+  margin: 8px auto;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  width: 48%; /* Two items per row */
+}
+
+.form_group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form_group input {
+  padding: 30px;
+  border: 2px solid var(--black2);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.form_actions {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form_actions button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form_actions button:hover {
+  background-color: #0056b3;
+}
+
+.product-icon {
+  position: absolute;
+  top: 4px;
+  right: 50px;
+  color: var(--black1);
+}
+
+.file{
+  padding: 27px
+}
+
+
+
+
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.add_product_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.add_product_table td {
+  padding: 10px;
+}
+
+.add_product_table label {
+  font-weight: bold;
+}
+
+.add_product_table input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  background-color: #0056b3;
+}
+
+
+.form_group select {
+  padding: 30px;
+  padding-right: 40px;
+  border: 2px solid var(--black2);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  appearance: none;
+  background-color: white;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="none" stroke="%23333" stroke-width="2" d="M5 7l5 5 5-5" /%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  background-size: 20px;
+}
+
+.form_group select:focus {
+  border-color: #007bff; 
+}
